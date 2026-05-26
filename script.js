@@ -87,19 +87,19 @@ async function startAudio() {
             "현재 소리 크기: " +
             volume.toFixed(3);
 
-        // 게이지 업데이트
-        let meterValue = volume * 500;
-        if (meterValue > 100) {
-            meterValue = 100;
+         // 게이지 업데이트
+         let meterValue = volume * 500;
+         if (meterValue > 100) {
+             meterValue = 100;
             }
             meter.style.width =
             meterValue + "%";
-
+            
         // 색상 변경
         if (meterValue < 40) {
             meter.style.backgroundColor =
-                "green";
-        } else if (meterValue < 70) 
+                 "green";
+        } else if (meterValue < 70) {
 
     meter.style.backgroundColor =
         "orange";
@@ -108,8 +108,8 @@ async function startAudio() {
 
             meter.style.backgroundColor =
                 "red";
-        }    // 미터 표시
-        
+        }   // 미터 표시
+
         // 위험 기준
         if (volume > 0.10) {
 
