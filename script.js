@@ -91,9 +91,9 @@ async function startAudio() {
         let meterValue = volume * 500;
         if (meterValue > 100) {
             meterValue = 100;
-        }
-        meter.style.width =
-        meterValue + "%";
+            }
+            meter.style.width =
+            meterValue + "%";
 
         // 색상 변경
         if (meterValue < 40) {
@@ -108,7 +108,7 @@ async function startAudio() {
 
             meter.style.backgroundColor =
                 "red";
-        }
+        }    // 미터 표시
         
         // 위험 기준
         if (volume > 0.10) {
