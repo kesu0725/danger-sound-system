@@ -133,7 +133,7 @@ function triggerWarning() {
     // 진동
     if (navigator.vibrate) {
 
-        navigator.vibrate([300, 100, 300]);
+        navigator.vibrate([1000, 500, 1000]);
     }
 
     // 확인 버튼 표시
