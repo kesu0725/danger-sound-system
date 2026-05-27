@@ -111,7 +111,7 @@ async function startAudio() {
         }   // 미터 표시
 
         // 위험 기준
-        if (volume > 0.10) {
+        if (volume > 0.02) {
 
             // 처음 위험 감지 시 시간 기록
             if (dangerStartTime === null) {
